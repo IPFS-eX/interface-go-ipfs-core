@@ -2,9 +2,9 @@ package iface
 
 import (
 	"context"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 // Pin holds information about pinned resource
