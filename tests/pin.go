@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ipfs/interface-go-ipfs-core"
-	opt "github.com/ipfs/interface-go-ipfs-core/options"
-	"github.com/ipfs/interface-go-ipfs-core/path"
+	"github.com/ETHFSx/interface-go-ipfs-core"
+	opt "github.com/ETHFSx/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/path"
 
 	"github.com/ipfs/go-cid"
 	ipldcbor "github.com/ipfs/go-ipld-cbor"
