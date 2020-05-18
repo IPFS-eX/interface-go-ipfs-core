@@ -2,12 +2,12 @@ package tests
 
 import (
 	"context"
-	"github.com/ipfs/interface-go-ipfs-core/path"
+	"github.com/ETHFSx/interface-go-ipfs-core/path"
 	"math"
 	"strings"
 	"testing"
 
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 
 	ipldcbor "github.com/ipfs/go-ipld-cbor"
 )

@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 func (tp *TestSuite) TestDht(t *testing.T) {

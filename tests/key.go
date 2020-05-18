@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ipfs/interface-go-ipfs-core"
-	opt "github.com/ipfs/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core"
+	opt "github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 func (tp *TestSuite) TestKey(t *testing.T) {
