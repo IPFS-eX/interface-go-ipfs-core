@@ -3,6 +3,7 @@ package iface
 import (
 	"context"
 	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	cid "github.com/ipfs/go-cid/_rsrch/cidiface"
 	"io"
 
 	"github.com/ETHFSx/interface-go-ipfs-core/options"
