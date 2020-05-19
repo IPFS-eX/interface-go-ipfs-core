@@ -8,7 +8,6 @@ require (
 	github.com/ipfs/go-merkledag v0.0.3
 	github.com/ipfs/go-path v0.0.3
 	github.com/ipfs/go-unixfs v0.0.4
-	github.com/ETHFSx/interface-go-ipfs-core v0.3.1-rc.0
 	github.com/libp2p/go-libp2p-core v0.2.2
 	github.com/multiformats/go-multiaddr v0.0.4
 	github.com/multiformats/go-multihash v0.0.7
