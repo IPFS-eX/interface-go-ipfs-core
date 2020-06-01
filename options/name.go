@@ -3,7 +3,7 @@ package options
 import (
 	"time"
 
-	ropts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	ropts "github.com/IPFS-eX/interface-go-ipfs-core/options/namesys"
 )
 
 const (

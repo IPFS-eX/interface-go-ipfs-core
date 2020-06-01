@@ -2,10 +2,10 @@ package iface
 
 import (
 	"context"
-	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 	"io"
 
-	"github.com/ETHFSx/interface-go-ipfs-core/options"
+	"github.com/IPFS-eX/interface-go-ipfs-core/options"
 
 	"github.com/libp2p/go-libp2p-core/peer"
 

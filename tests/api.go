@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 )
 
 var apiNotImplemented = errors.New("api not implemented")

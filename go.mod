@@ -1,4 +1,4 @@
-module github.com/ETHFSx/interface-go-ipfs-core
+module github.com/IPFS-eX/interface-go-ipfs-core
 
 require (
 	github.com/ipfs/go-cid v0.0.3
