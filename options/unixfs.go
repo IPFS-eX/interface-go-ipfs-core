@@ -6,6 +6,7 @@ import (
 
 	cid "github.com/ipfs/go-cid"
 	dag "github.com/ipfs/go-merkledag"
+	"github.com/libp2p/go-libp2p-core/peer"
 	mh "github.com/multiformats/go-multihash"
 )
 
@@ -36,6 +37,9 @@ type UnixfsAddSettings struct {
 	Events   chan<- interface{}
 	Silent   bool
 	Progress bool
+
+	EncryptPwd string
+	Identity   peer.ID
 }
 
 type UnixfsLsSettings struct {
@@ -66,6 +70,8 @@ func UnixfsAddOptions(opts ...UnixfsAddOption) (*UnixfsAddSettings, cid.Prefix, 
 		Events:   nil,
 		Silent:   false,
 		Progress: false,
+
+		EncryptPwd: "",
 	}
 
 	for _, opt := range opts {
@@ -280,6 +286,23 @@ func (unixfsOpts) Nocopy(enable bool) UnixfsAddOption {
 func (unixfsOpts) ResolveChildren(resolve bool) UnixfsLsOption {
 	return func(settings *UnixfsLsSettings) error {
 		settings.ResolveChildren = resolve
+		return nil
+	}
+}
+
+// EncryptPwd specifies settings for the encrypt password to use.
+//
+// Default: empty
+func (unixfsOpts) EncryptPwd(encryptPwd string) UnixfsAddOption {
+	return func(settings *UnixfsAddSettings) error {
+		settings.EncryptPwd = encryptPwd
+		return nil
+	}
+}
+
+func (unixfsOpts) Identity(id peer.ID) UnixfsAddOption {
+	return func(settings *UnixfsAddSettings) error {
+		settings.Identity = id
 		return nil
 	}
 }

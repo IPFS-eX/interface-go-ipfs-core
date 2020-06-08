@@ -4,6 +4,7 @@ package iface
 
 import (
 	"context"
+
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 
 	"github.com/IPFS-eX/interface-go-ipfs-core/options"
@@ -42,6 +43,8 @@ type CoreAPI interface {
 
 	// PubSub returns an implementation of PubSub API
 	PubSub() PubSubAPI
+
+	Scan() ScanAPI
 
 	// ResolvePath resolves the path using Unixfs resolver
 	ResolvePath(context.Context, path.Path) (path.Resolved, error)
